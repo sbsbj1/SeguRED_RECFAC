@@ -9,11 +9,77 @@
 
 </head>
 <body>
-    <div class="center-buttons">
-        <button class="btn btn-custom" onclick="location.href='mapa_paradas.html'">Ruta 101</button>
-        <button class="btn btn-custom">Ruta 102</button>
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">SeguRED</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Reportes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contactos</a>
+            </li>
+          </ul>
+          <button class="btn btn-outline-danger my-2 my-sm-0 ml-auto" type="submit">Salir</button>
+
+        </div>
+      </nav>
+
+      <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">Lorem Ipsum</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+            <p>
+                <button class="btn btn-danger btn-lg" onclick="location.href='mapa_paradas.html'" role="button">Ruta 101</button>
+                <button class="btn btn-outline-secondary btn-lg" type="submit">Ver mas rutas</button>
+            </p>
+        </div>
     </div>
 
+     <!-- Sección informativa opcional -->
+     <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Rutas Monitoreadas</h5>
+                        <p class="card-text">Consulta las rutas en proceso de fiscalización activa.</p>
+                        <a class="btn btn-info" href="#" role="button">View details »</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Resumen Diario</h5>
+                        <p class="card-text">Visualiza el informe del día con los datos de evasión.</p>
+                        <a class="btn btn-info" href="#" role="button">View details »</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Historial</h5>
+                        <p class="card-text">Accede a los registros históricos de fiscalización.</p>
+                        <a class="btn btn-info" href="#" role="button">View details »</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+     <!-- Footer -->
+     <footer>
+        <p>SeguRED brindamos por la salud de todos los chilenos y chilenas, salud. &copy; 2024</p>
+    </footer>
 
      <!-- Bootstrap JS and dependencies -->
      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
